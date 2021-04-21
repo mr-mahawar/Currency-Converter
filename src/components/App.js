@@ -61,6 +61,8 @@ class App extends React.Component {
 								placeholder="Enter Amount"
 								onChange={this.amountChange}
 								value={this.state.amount}
+								step="any"
+								min="0"
 							/>
 						</div>
 						<div className="field">
@@ -86,6 +88,8 @@ class App extends React.Component {
 								type="number"
 								placeholder="Converted Amount"
 								value={this.state.result}
+								step="any"
+								min="0"
 								readOnly
 							/>
 						</div>
